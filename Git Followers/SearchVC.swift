@@ -19,12 +19,28 @@ class SearchVC: UIViewController {
         configureLogoImageView()
         configureTextField()
         configureCallToActionButton()
+        createDismissKeyboardTapGesture()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.isNavigationBarHidden = true
+        
+        
     }
+    
+    func createDismissKeyboardTapGesture() {
+        let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(tap)
+        
+    }
+    
+    
+    @objc func pushFollowerLIstVC() {
+        
+    }
+    
     
     func configureLogoImageView() {
         view.addSubview(logoImageView)
@@ -41,8 +57,12 @@ class SearchVC: UIViewController {
     
     func configureTextField() {
         view.addSubview(usernameTextField)
+        usernameTextField.delegate = self
+        
+        
+        
         usernameTextField.translatesAutoresizingMaskIntoConstraints = false
-        usernameTextField.backgroundColor = .systemGray4  // Add background color for debugging
+        usernameTextField.backgroundColor = .systemGray6  // Add background color for debugging
         
         NSLayoutConstraint.activate([
             usernameTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 48),
@@ -54,6 +74,7 @@ class SearchVC: UIViewController {
     
     func configureCallToActionButton() {
         view.addSubview(callToActionButton)
+        callToActionButton.addTarget(self, action: #selector(pushFollowerLIstVC), for: .touchUpInside)
         
         
         NSLayoutConstraint.activate([
@@ -65,4 +86,14 @@ class SearchVC: UIViewController {
         
         ])
     }
+}
+
+
+
+extension SearchVC: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print("Did Tab return")
+        return true
+    }
+    
 }

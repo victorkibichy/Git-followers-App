@@ -11,12 +11,12 @@ class FavoritesListVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemTeal
-
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .systemBackground
+                // Do any additional setup after loading the view.
     }
     
-
+    
+  
     /*
     // MARK: - Navigation
 

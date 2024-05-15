@@ -3,13 +3,7 @@
 //  Git Followers
 //
 //  Created by  Bouncy Baby on 5/15/24.
-
-
-
-
-
 //
-
 import UIKit
 
 class GFTextfield: UITextField {
@@ -38,6 +32,9 @@ class GFTextfield: UITextField {
         
         backgroundColor = .tertiarySystemBackground
         autocorrectionType = .no
+        
+        placeholder = "Enter a Username"
+        
         
     }
     

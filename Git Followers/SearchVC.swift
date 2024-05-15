@@ -38,6 +38,10 @@ class SearchVC: UIViewController {
     
     
     @objc func pushFollowerLIstVC() {
+        let followerListVC = FollowerListVC()
+        followerListVC.username = usernameTextField.text
+        followerListVC.title = usernameTextField.text
+        navigationController?.pushViewController(followerListVC, animated: true)
         
     }
     
@@ -92,7 +96,7 @@ class SearchVC: UIViewController {
 
 extension SearchVC: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        print("Did Tab return")
+        pushFollowerLIstVC()
         return true
     }
     

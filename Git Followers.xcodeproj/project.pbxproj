@@ -66,9 +66,9 @@
 				0577F2942BF34A490008A9C1 /* FavoritesListVC.swift */,
 				057824FC2BF48FD4007359C0 /* GFButton.swift */,
 				057824FE2BF4A68B007359C0 /* GFTextfield.swift */,
+				057825002BF4F1FD007359C0 /* FollowerListVC.swift */,
 				057BBBA02BEA0A7E0074F9C3 /* Assets.xcassets */,
 				057BBBA52BEA0A7E0074F9C3 /* Info.plist */,
-				057825002BF4F1FD007359C0 /* FollowerListVC.swift */,
 			);
 			path = "Git Followers";
 			sourceTree = "<group>";

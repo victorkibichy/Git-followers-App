@@ -6,10 +6,11 @@
 //
 import UIKit
 
-class GFTextfield: UITextField {
+class GFTextField: UITextField {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        configure()
     }
     
     required init?(coder: NSCoder) {
@@ -22,6 +23,7 @@ class GFTextfield: UITextField {
         layer.borderWidth = 2
         layer.borderColor = UIColor.systemGray4.cgColor
         
+        borderStyle = .roundedRect
         textColor = .label
         tintColor = .label
         textAlignment = .center

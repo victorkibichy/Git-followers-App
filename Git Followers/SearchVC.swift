@@ -10,13 +10,14 @@ import UIKit
 class SearchVC: UIViewController {
     
     let logoImageView = UIImageView()
-    let usernameTextField = GFTextfield()
+    let usernameTextField = GFTextField()
     let callToActionButton = GFButton(backgroundColor: .systemGreen, title: "Get Followers")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        configureLogoImageView()  // Add this line to call the function
+        configureLogoImageView()
+        configureTextField()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -33,7 +34,20 @@ class SearchVC: UIViewController {
             logoImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 80),
             logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             logoImageView.heightAnchor.constraint(equalToConstant: 200),
-            logoImageView.widthAnchor.constraint(equalToConstant: 200)
+            logoImageView.widthAnchor.constraint(equalToConstant: 200),
+        ])
+    }
+    
+    func configureTextField() {
+        view.addSubview(usernameTextField)
+        usernameTextField.translatesAutoresizingMaskIntoConstraints = false
+        usernameTextField.backgroundColor = .systemGray4  // Add background color for debugging
+        
+        NSLayoutConstraint.activate([
+            usernameTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 48),
+            usernameTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
+            usernameTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
+            usernameTextField.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
 }

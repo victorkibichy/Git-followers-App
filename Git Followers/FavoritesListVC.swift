@@ -11,7 +11,7 @@ class FavoritesListVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemMint
+        view.backgroundColor = .systemTeal
 
         // Do any additional setup after loading the view.
     }

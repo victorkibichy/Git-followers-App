@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		052DAF412BFB886E0025DEEE /* UIViewCobtroller+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052DAF402BFB886E0025DEEE /* UIViewCobtroller+Ext.swift */; };
 		0577F2932BF3498E0008A9C1 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0577F2922BF3498E0008A9C1 /* SearchVC.swift */; };
 		0577F2952BF34A490008A9C1 /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0577F2942BF34A490008A9C1 /* FavoritesListVC.swift */; };
 		057824FD2BF48FD4007359C0 /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057824FC2BF48FD4007359C0 /* GFButton.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		052DAF402BFB886E0025DEEE /* UIViewCobtroller+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewCobtroller+Ext.swift"; sourceTree = "<group>"; };
 		0577F2922BF3498E0008A9C1 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		0577F2942BF34A490008A9C1 /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
 		057824FC2BF48FD4007359C0 /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				057B7B1C2BF5E2210004B442 /* GFTitleLabel.swift */,
 				057B7B1E2BF5E9230004B442 /* GFBodyLabel.swift */,
 				057B7B202BF5EB1B0004B442 /* GFAlertVC.swift */,
+				052DAF402BFB886E0025DEEE /* UIViewCobtroller+Ext.swift */,
 				057BBBA02BEA0A7E0074F9C3 /* Assets.xcassets */,
 				057BBBA52BEA0A7E0074F9C3 /* Info.plist */,
 			);
@@ -154,6 +157,7 @@
 				057824FF2BF4A68B007359C0 /* GFTextfield.swift in Sources */,
 				0577F2952BF34A490008A9C1 /* FavoritesListVC.swift in Sources */,
 				057824FD2BF48FD4007359C0 /* GFButton.swift in Sources */,
+				052DAF412BFB886E0025DEEE /* UIViewCobtroller+Ext.swift in Sources */,
 				0577F2932BF3498E0008A9C1 /* SearchVC.swift in Sources */,
 				057B7B212BF5EB1B0004B442 /* GFAlertVC.swift in Sources */,
 				057B7B1F2BF5E9230004B442 /* GFBodyLabel.swift in Sources */,

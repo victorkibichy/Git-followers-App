@@ -25,6 +25,8 @@ class FollowerListVC: UIViewController {
         NetworkManager.shared.getFollwers(for: username, page: 1) { result in
             
             
+            
+            
             switch result {
             case .success(let followers):
                 print(followers)

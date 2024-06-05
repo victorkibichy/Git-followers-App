@@ -26,6 +26,7 @@ class FollowerListVC: UIViewController {
         configureViewController()
         getFollowers()
         configureDataSource()
+        createThreeColumnFlowLayout()
       
     
         
@@ -50,7 +51,7 @@ class FollowerListVC: UIViewController {
     func configureCollectionView() {
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createThreeColumnFlowLayout())
         view.addSubview(collectionView)
-        collectionView.backgroundColor = .systemPink
+        collectionView.backgroundColor = .systemTeal
         collectionView.register(FollowerCell.self, forCellWithReuseIdentifier: FollowerCell.reuseID)
     }
     
@@ -110,6 +111,8 @@ class FollowerListVC: UIViewController {
         var snapshot = NSDiffableDataSourceSnapshot<Section, Follower>()
         snapshot.appendSections([.main])
         snapshot.appendItems(followers)
+        DispatchQueue.main.async { self.dataSource.apply(snapshot, animatingDifferences: true) }
+       
         
     }
     

@@ -90,7 +90,6 @@
 		057AE62B2BFC7D3B004C0109 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
-				053A31AA2C076245005238F0 /* Cells */,
 				053A31AF2C076618005238F0 /* GFAvatarImageView.swift */,
 				057B7B202BF5EB1B0004B442 /* GFAlertVC.swift */,
 				057824FC2BF48FD4007359C0 /* GFButton.swift */,
@@ -98,6 +97,7 @@
 				057B7B1C2BF5E2210004B442 /* GFTitleLabel.swift */,
 				052DAF402BFB886E0025DEEE /* UIViewCobtroller+Ext.swift */,
 				057B7B1E2BF5E9230004B442 /* GFBodyLabel.swift */,
+				053A31AA2C076245005238F0 /* Cells */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
